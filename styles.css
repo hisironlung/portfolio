@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --darkred: #420108;
+    --lightred: #cb2026;
+    --mediumred: #840000;
+    --orange: #d36718;
+    --black: #000;
+    --white: #fff;
+    --grey: #afa3a3;
+    --darkgrey: #837777;
+}
+
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url('fonts/Jacques_Francois/JacquesFrancois-Regular.ttf');
+}
+@font-face {
+    font-family: 'Texturina';
+    src: url('fonts/Texturina/Texturina-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: 'Yuji Syuku';
+    src: url('fonts/Yuji_Syuku/YujiSyuku-Regular.ttf');
+}
+
+html{
+    font-family: Yuji Syuku, serif;
+    font-weight: 800;
+    overflow: auto;
+    color: var(--white);
+}
+
+body{
+    margin: 0;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, p, ul, li{
+    margin: 0;
+}
+
+section, div, article{
+    max-width: 100%;
+}
+
+hr{
+    width: 80vw;
+    margin: 0;
+    background: var(--white);
+    height: 0.5vw;
+    margin-left: 5vw;
+    margin-top: 0.5vw;
+}
+
+p, li{
+    font-size: 2vw;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:active{
+    color: var(--darkgrey);
+}
+
+a:visited{
+    color: var(--black);
+}
+
+header{
+    background-color: var(--mediumred);
+    padding: 2vw;
+    margin: 0;
+    color: var(--black);
+}
+nav ul{
+    font-family: Texturina, serif;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav{
+    margin-right: 5vw;
+    margin-top: 1vw;
+}
+#name{
+    font-family: Texturina, serif;
+    font-size: 2.5vw;
+    margin-right: 30vw;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+}
+#intro img{
+    max-width: 100%; width: 40vw;
+}
+#intro article{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+#intro article h1{
+    font-size: 5vw;
+    font-family: Texturina, serif;
+    display: inline-block;
+    margin-bottom: 8vw;
+    text-align: center;
+}
+#intro article p{
+    color: var(--lightred);
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+    display: inline-block;
+}
+
+#work{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: fit-content;
+    padding: 3vw 5vw;
+    background-color: var(--darkred);
+    row-gap: 4vw;
+    align-self: center;
+    border-left: 1vw solid var(--mediumred);
+    border-right: 1vw solid var(--mediumred);
+    border-bottom: 1vw solid var(--mediumred);;
+}
+#work img{
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+    object-position: center;
+    outline: 0.3vw solid var(--black);
+}
+
+#work div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 20vw;
+    outline: 1vw solid var(--black);
+    background-color: var(--mediumred);
+    padding: 0 2vw;
+}
+
+#work h3{
+    font-size: 5vw;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Texturina, serif;
+}
+
+#desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+#desc p{
+    text-align: center;
+    width: 85vw;
+}
+
+#work article{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    column-gap: 7vw;
+    align-items: center;
+}
+
+#work .figma div h3{
+    font-size: 4vw;
+}
+
+.category{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 5vw;
+    background-color: var(--darkred);
+    row-gap: 4vw;
+    column-gap: 2vw;
+    border: .7vw solid var(--black);
+}
+.category img{
+    height: 25vw;
+    width: 25vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+#aatw img{
+    height: 100%;
+}
+
+#redesign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 5vw;
+    row-gap: 4vw;
+    background-color: var(--darkred);
+    border: .7vw solid var(--black);
+}
+
+#redesign div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    column-gap: 3vw;
+}
+
+#redesign img{
+    height: 40vw;
+    object-fit: contain;
+    object-position: top;
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mediumred);
+    color: var(--black);
+    padding: 3vw 0;
+}
+
+.divider hr{
+    margin: 0;
+    background-color: var(--black);
+    border: none;
+    width: 25vw;
+}
+
+.divider h3{
+    font-size: 3vw;
+    font-family: Texturina, serif;
+    margin-bottom: .9vw;
+    text-align: center;
+    margin: 0 2vw;
+    text-transform: uppercase;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+}
+
+#contact img{
+    max-width: 100%; width: 50vw;
+}
+
+#contact h1{
+    font-size: 5vw;
+    font-family: Texturina, serif;
+    display: inline-block;
+    margin-top: 12vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+}
+
+#contact article div{
+    display: flex;
+    flex-direction: row;
+    row-gap: 5vw;
+    color: var(--lightred);
+}
+
+#contact ul{
+    list-style-type: none;
+
+}
+
+#contact a{
+    color: var(--lightred);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--mediumred);
+    padding: 2vw;
+    margin: 0;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    column-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10vw;
+    padding-bottom: 2vw;
+}
+
+footer h3, footer h4{
+    font-family: Texturina, serif;
+}
+
+footer h3{
+    font-size: 4vw;
+}
+
+footer h4{
+    font-size: 2.5vw;
+    margin: 0;
+    margin-bottom: 1vw;
+}
+
+footer article #links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+
+footer li{
+    font-size: 1.6vw;
+    list-style-type: none;
+    color: var(--darkred);
+}
+
+footer a, footer a:visited{
+    color: var(--darkred);
+}
+
+footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+#totop a, #totop a:visited{
+    color: var(--black);
+    font-size: 2vw;
+}
+
+
+

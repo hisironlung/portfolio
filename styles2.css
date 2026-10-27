@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --darkred: #420108;
+    --lightred: #cb2026;
+    --mediumred: #840000;
+    --orange: #d36718;
+    --black: #000;
+    --white: #fff;
+    --grey: #afa3a3;
+    --darkgrey: #837777;
+}
+
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url('fonts/Jacques_Francois/JacquesFrancois-Regular.ttf');
+}
+@font-face {
+    font-family: 'Texturina';
+    src: url('fonts/Texturina/Texturina-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: 'Yuji Syuku';
+    src: url('fonts/Yuji_Syuku/YujiSyuku-Regular.ttf');
+}
+
+html{
+    font-family: Yuji Syuku, serif;
+    font-weight: 800;
+    overflow: auto;
+    color: var(--white);
+}
+
+body{
+    margin: 0;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, p, ul, li{
+    margin: 0;
+}
+
+section, div, article{
+    max-width: 100%;
+}
+
+hr{
+    width: 80vw;
+    margin: 0;
+    background: var(--white);
+    height: 0.5vw;
+    margin-left: 5vw;
+    margin-top: 0.5vw;
+}
+
+p, li{
+    font-size: 2vw;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:active{
+    color: var(--darkgrey);
+}
+
+a:visited{
+    color: var(--black);
+}
+
+header{
+    background-color: var(--mediumred);
+    padding: 2vw;
+    margin: 0;
+    color: var(--black);
+}
+nav ul{
+    font-family: Texturina, serif;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav{
+    margin-right: 5vw;
+    margin-top: 1vw;
+}
+
+#name{
+    font-family: Texturina, serif;
+    font-size: 2.5vw;
+    margin-right: 30vw;
+}
+
+h1{
+    font-size: 5vw;
+    text-align: center;
+    font-family: Texturina, serif;
+    margin: 4vw 0 2vw;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vw;
+    padding: 1.5vw;
+}
+p{
+    text-align: center;
+    color: var(--grey);
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mediumred);
+    color: var(--black);
+    padding: 1vw 2vw;
+    margin-bottom: 1vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 7vw;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 5vw;
+    background-color: var(--darkred);
+    border: .7vw solid var(--black);
+    padding: 3vw;
+    width: fit-content;
+}
+
+.items img{
+    width: 40vw;
+    height: auto;
+}
+
+.items video{
+    height: 35vw;
+    width: auto;
+}
+
+#redesign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    padding: 1vw;
+}
+
+#redesign h3{
+    font-family: Texturina, serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+#redesign div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4vw;
+    row-gap: 4vw;
+    padding: 1.5vw;
+    background-color: var(--darkred);
+    border: .7vw solid var(--black);
+    margin-bottom: 5vw;
+}
+
+#redesign div img{
+    height: 50vw;
+    object-fit: contain;
+    object-position: top;
+}
+
+#redesign div video{
+    height: 50vw;
+    object-fit: contain;
+    object-position: top;
+}
+
+#mahj{
+    flex-direction: column;
+}
+
+#mahj img{
+    width: 60vw
+}
+
+#aatw section{
+    justify-content: space-around;
+    column-gap: 5vw;
+    margin-bottom: 5vw;
+    width: fit-content;
+}
+
+#aatw h3{
+    font-family: Texturina, serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+#aatw img{
+    width: 25vw;
+}
+
+#clothes div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+    padding: 1.5vw;
+    background-color: var(--darkred);
+    border: .7vw solid var(--black);
+    margin-bottom: 5vw;
+}
+
+#clothes div img{
+    width: 40vw;
+}
+
+#clothes h3{
+    font-family: Texturina, serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+#pottery{
+    flex-direction: column;
+}
+
+#drawings{
+    flex-direction: column;
+}
